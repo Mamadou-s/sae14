@@ -5,39 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulaire d'inscription</title>
+    <link rel="stylesheet" href={{asset('style.css')}}>
 </head>
 <body>
-    <h1>formulaire d'inscription</h1>
-    <form method="post" action="traitement.php">
-        <fieldset>
-            <legend>Veuillez remplir le formulaire</legend>
-            <label>Nom</label>
-            <input type="text" name="Nom">
-            <label>Prénom</label>
-            <input type="text" name="Prénom"><br>
-            <br><label><E-Mail></label>
-                <input type="text" name="email">
-                <label>Société</label>
-                <input type="text"  name="text"><br><br>
-                <label>De quel pays êtes-vous?</label><br><br>
-                <input type="radio" name="pays" value="France">France<br><br>
-                <input type="radio" name="pays" value="USA">USA<br><br>
-                <input type="radio" name="pays" value="Canada">Canada<br><br>
-
-                <label>Etes-vous un homme ou une femme</label><br>
-                <select name="sexe">
-                    <option value="Homme">Homme</option>
-                    <option value="Femme">Femme</option>
-                    <option value="Autre">Autre</option>
-                    </select><br>
-                    <br><label>Commentaire</label><br>
-                    <textarea  rows="10" cols="50"></textarea><br>
-                    <br><input type="submit" name="Envoyer"><br>
-                    </fieldset>
-                  </form>
-                  <br><br>
-                  <a href="index.html" target="_parent">Retour vers la page d'accueil</a>
-
+<form action ="cv-job.pdf">
+  <label>Nom:</label>
+  <input type="text" name="name" required>
+  <br>
+  <label>Prénom:</label>
+  <input type="text" name="surname" required>
+  <br>
+  <label>Email:</label>
+  <input type="email" name="email" required>
+  <br>
+  <label>Nom de la société:</label>
+  <input type="text" name="company" required>
+  <br>
+  <label>Numéro de téléphone:</label>
+  <input type="tel" name="phone" required>
+  <br>
+  <button type="submit" id="download-button" >Télécharger mon CV</button>
+</form>
 
 
     

@@ -14,7 +14,9 @@ nav ul {
   display: flex;
 }
 
-body{}
+body{
+  background-color: rgb(151, 190, 87);
+}
 
 nav li {
   margin: 0 10px;
@@ -30,11 +32,11 @@ nav a {
 }
 
 nav a:hover {
-  color: #ccc;
+  color: #cccccc;
 }
 .container {
   width: 50%;
-  height: 50px;
+  height: 200px;
   margin: 0 auto;
   text-align: center;
   padding: 30px 0;
@@ -44,8 +46,37 @@ footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 10px;
+  padding: 50px;
 
 }
+
+/* contact */
+
+
+label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+
+
 
 
